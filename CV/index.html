@@ -1,126 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida - Salome galvez</title>
-</head>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f6f8;
-    }
-
-    .seccion-superior {
-      background-color: #722a85fd; /* Morado Lindo */
-      color: white;
-      text-align: center;
-      padding: 40px 0;
-    }
-
-    .seccion-inferior {
-      background-color: white;
-      padding: 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* Dos columnas */
-      gap: 30px;
-    }
-
-    section {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-    }
- .seccion-superior {
-  background-color: #442a81; /* morado */
-  color: white;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.foto-perfil {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* redonda */
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* sombra suave */
-  display: block;
-  margin: 0 auto 15px auto; /* centrada y separada del nombre */
-}
-.link-whatsapp {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.link-whatsapp:hover {
-  text-decoration: underline;
-}
-.descripcion {
-  background-color: #442a81; 
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de vida - Salome Galvez</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="seccion-superior">
-    <img src="img.jpg" alt="Foto de Salome Galvez" class="foto-perfil">
-    <h1>Salome Galvez</h1>
-    <p>
-    📞 
-    <a href="https://wa.me/573225935772" target="_blank" class="link-whatsapp">
-      +57 322 5935772
-    </a>
-   </p>
-   <p>📧 galvezsalome57@gmail.com</p>
-   <p>🎂 Enero 12 de 2005</p>
+  <div class="cv-container">
 
-  </header>
+    <header class="seccion-superior fade-in">
+      <img src="img.jpg" alt="Foto de Salome Galvez" class="foto-perfil">
+      <h1>Salome Galvez Betancurt</h1>
+      <p>
+        📞 <a href="https://wa.me/573225935772" target="_blank" class="link-whatsapp">
+          +57 322 5935772
+        </a>
+      </p>
+      <p>📧 galvezsalome57@gmail.com</p>
+      <p>🎂 Enero 12 de 2005</p>
+    </header>
 
-  <!-- Sección inferior -->
-  <main class="seccion-inferior">
-    <section>
-      <h2>Experiencia</h2>
-      <h3>Auxiliar administrativa</h3>
-          <p>Ternium Siderurgica de Caldas - Marzo 2022 - Septiembre 2022</p>
-      <h3>Auxiliar de Peluqueria</h3>
-          <p>Agrados peluqueria - Septiembre 2022 - Enero 2023</p>
-      <h3>Asesora comercial</h3> 
-          <p>Emergia - Mayo 2023 - Diciembre 2023</p>
-      <h3>Asesora comercial</h3>  
-          <p>Unicall.io - Febrero 2024 - Noviembre 2024</p>
-      <h3>Auxiliar administrativa</h3> 
-          <p>EDS La Maria S.A.S - Noviembre 2024 - Actualmente</p>  
+    <main class="seccion-inferior fade-in">
+      <section>
+        <h2>Experiencia</h2>
+        <div class="job">
+          <h3>Auxiliar administrativa</h3>
+          <p>Ternium Siderurgica de Caldas — Marzo 2022 - Septiembre 2022</p>
+        </div>
+        <div class="job">
+          <h3>Auxiliar de Peluquería</h3>
+          <p>Agrados peluquería — Septiembre 2022 - Enero 2023</p>
+        </div>
+        <div class="job">
+          <h3>Asesora comercial</h3>
+          <p>Emergia — Mayo 2023 - Diciembre 2023</p>
+        </div>
+        <div class="job">
+          <h3>Asesora comercial</h3>
+          <p>Unicall.io — Febrero 2024 - Noviembre 2024</p>
+        </div>
+        <div class="job">
+          <h3>Auxiliar administrativa</h3>
+          <p>EDS La Maria S.A.S — Noviembre 2024 - Actualmente</p>
+        </div>
+      </section>
 
+      <section>
+        <h2>Educación</h2>
+        <h3>Básica Primaria</h3>
+        <p>Eugenia Ravasco</p>
+
+        <h3>Básica Secundaria</h3>
+        <p>Institución Educativa Santa Luisa de Marillac</p>
+
+        <h3>Tecnólogo en Gestión Administrativa</h3>
+        <p>SENA Regional Caldas</p>
+      </section>
+    </main>
+
+<section class="skills fade-in">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>💼 Gestión administrativa</li>
+        <li>🤝 Atención al cliente</li>
+        <li>🧠 Comunicación asertiva</li>
+        <li>💻 Manejo de Office</li>
+        <li>🎯 Organización y liderazgo</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Educación</h2>
-        <h3>Basica Primaria</h3>
-           <p>Eugenia Ravasco</p> 
-        
-        <h3>Basica secundaria</h3>
-            <p>Institucion educativa Santa Luisa de Marillac</p>
-        
-        <h3>Tecnologo en gestion administrativa</h3>
-            <p>SENA Regional Caldas</p>
-    </section>
-  </main>
-  <footer class="descripcion">
-  <p>
-    Soy una persona amable, organizada y con excelente actitud para el trabajo en equipo. 
-    Me gusta aportar soluciones, mantener buena comunicación y dar siempre lo mejor de mí.
-  </p>
-</footer>
-</body>
+    <footer class="descripcion fade-in">
+      <p>
+        Soy una persona amable, organizada y con excelente actitud para el trabajo en equipo. 
+        Me gusta aportar soluciones, mantener buena comunicación y dar siempre lo mejor de mí.
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
