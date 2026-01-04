@@ -33,8 +33,8 @@ body {
 }
 
 .foto-perfil {
-  width: 200px;           
-  height: 200px;          
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
@@ -89,6 +89,47 @@ section h2 {
 .skills h2 {
   color: #5b2b82;
   margin-bottom: 20px;
+}
+
+/* -----------------------------
+   NUEVAS BARRAS DE HABILIDADES
+-------------------------------- */
+.skills-bars {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #4a256b;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 12px;
+  background: #e8d9ff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-percentage {
+  height: 100%;
+  background: #5b2b82;
+  width: 0;
+  border-radius: 10px;
+  animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--percentage); }
 }
 
 .skills ul {
